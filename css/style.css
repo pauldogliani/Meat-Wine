@@ -30,6 +30,27 @@ body {
 
 .section { padding: 80px 0; }
 .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 40px; align-items: center; }
+/* BOUTON PRINCIPAL (HERO) */
+.btn-primary {
+    display: inline-block;
+    background-color: var(--text-dark);
+    color: #ffffff !important; /* Force le blanc et vire le bleu du navigateur */
+    padding: 14px 28px;
+    text-decoration: none !important; /* Supprime le soulignement */
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+    transition: var(--transition);
+    border: 1px solid var(--text-dark);
+    margin-top: 20px;
+}
+
+.btn-primary:hover {
+    background-color: var(--accent-gold);
+    color: #ffffff !important;
+    border-color: var(--accent-gold);
+}
 
 /* LE CADRANT DE CONTACT RUSTIQUE-CHIC */
 .contact-dial-frame {
